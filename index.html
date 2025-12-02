@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- BoxIcon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="cover cover-left"></div>
+    <div class="cover cover-right"></div>
+
+    <div class="book">
+      <!-- profile page -->
+      <div class="book-page page-left">
+        <div class="profile-page">
+          <img src="./Logo.png" alt="Joseph Hope Logo" width="150" height="150"/>
+          <h1>Joseph Hope</h1>
+          <h3>Web Developer | Copywriter | Entrepreneur</h3>
+
+          <div class="social-media">
+            <a href="https://instagram.com/dr.mindtricks" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/joseph-hope-5762612a3/" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+          </div>
+
+          <p>
+            Hi, I'm <strong>Joseph Hope @Dr.Mindtricks</strong>.  
+            I hold a <strong>Diploma in Software Engineering from GoMyCode Kenya</strong>.  
+            I am a <strong>Web Developer, Copywriter, Video Editor, Pianist, and Entrepreneur</strong>.  
+            I help brands communicate with clarity, creativity, and impact.
+          </p>
+
+          <div class="btn-box">
+            <a href="Assests/Joseph_Hope_CV.pdf.pdf" class="btn" download>Download CV</a>
+            <a href="#" class="btn contact-me">Contact Me!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 1 & 2 -->
+      <div class="book-page page-right turn" id="turn-1">
+        <!-- page 1 (work experience) -->
+        <div class="page-front">
+          <h1 class="title">Work Experience</h1>
+
+          <div class="workeduc-box">
+            <div class="workeduc-content">
+              <span class="year"><i class="bx bxs-calendar"></i>2024 - Present</span>
+              <h3>Freelance Copywriter & Web Developer</h3>
+              <p>
+                Helping startups and businesses craft engaging websites and persuasive content 
+                that connects with their audience and drives growth.
+              </p>
+            </div>
+
+            <div class="workeduc-content">
+              <span class="year"><i class="bx bxs-calendar"></i>2022 - Present</span>
+              <h3>Video Editor - Freelance</h3>
+              <p>
+                Edited promotional and creative videos for brands, influencers, 
+                and entrepreneurs to boost their digital presence.
+              </p>
+            </div>
+          </div>
+          <span class="number-page">1</span>
+
+          <!-- next button -->
+          <span class="nextprev-btn" data-page="turn-1">
+            <i class="bx bx-chevron-right"></i>
+          </span>
+        </div>
+
+        <!-- page 2 (education) -->
+        <div class="page-back">
+          <h1 class="title">Education</h1>
+
+          <div class="workeduc-box">
+            <div class="workeduc-content">
+              <span class="year"><i class="bx bxs-calendar"></i>2024 - 2025</span>
+              <h3>Diploma in Software Engineering - GoMyCode Kenya</h3>
+              <p>
+                Specialized in full-stack development, problem solving,
+                and building real-world digital solutions.
+              </p>
+              <a href="https://diploma.gomycode.app/?id=31750258839846860" target="_blank" rel="noopener noreferrer" class="btn">View Diploma</a>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <span class="number-page">2</span>
+
+          <!-- prev button -->
+          <span class="nextprev-btn back" data-page="turn-1">
+            <i class="bx bx-chevron-left"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- page 3 & 4 -->
+      <div class="book-page page-right turn" id="turn-2">
+        <!-- page 3 (my services) -->
+        <div class="page-front">
+          <h1 class="title">My Services</h1>
+
+          <div class="services-box">
+            <div class="services-content">
+              <i class="bx bx-code-alt"></i>
+              <h3>Web Development</h3>
+              <p>
+                Creating modern, responsive, and user-friendly websites.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-content">
+              <i class="bx bx-pencil"></i>
+              <h3>Copywriting</h3>
+              <p>
+                Writing persuasive, high-converting copy that boosts engagement 
+                and drives sales for businesses and personal brands.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-content">
+              <i class="bx bxs-videos"></i>
+              <h3>Video Editing</h3>
+              <p>
+                Editing promotional, marketing, and creative videos 
+                for brands and creators.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-content">
+              <i class="bx bx-music"></i>
+              <h3>Music & Creativity</h3>
+              <p>
+                Pianist and creative entrepreneur passionate about 
+                combining art, music, and technology.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <span class="number-page">3</span>
+
+          <!-- next button -->
+          <span class="nextprev-btn" data-page="turn-2">
+            <i class="bx bx-chevron-right"></i>
+          </span>
+        </div>
+
+        <!-- page 4 (my skills) -->
+        <div class="page-back">
+          <h1 class="title">My Skills</h1>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <h3>Front-End</h3>
+              <div class="content">
+                <span><i class="bx bxl-html5"></i> HTML</span>
+                <span><i class="bx bxl-css3"></i>CSS</span>
+                <span><i class="bx bxl-javascript"></i>JS</span>
+                <span><i class="bx bxl-react"></i>React Js</span>
+                <span><i class="bx bxl-bootstrap"></i>Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="skills-content">
+              <h3>Back-End</h3>
+              <div class="content">
+                <span><i class="bx bxl-nodejs"></i>Node JS</span>
+                <span><i class="bx bxl-mongodb"></i>MongoDB</span>
+                <span><i class="bx bx-server"></i>Express (Routing)</span>
+                <span><i class="bx bx-data"></i>Mongoose & MongoDB vs NodeJS</span>
+                <span><i class="bx bx-api"></i>REST API (With Postman Certification)</span>
+                <span><i class="bx bxl-php"></i>PHP</span>
+              </div>
+            </div>
+
+            <div class="skills-content">
+              <h3>Copywriting & Marketing</h3>
+              <div class="content">
+                <span><i class="bx bx-pencil"></i>Sales Copy</span>
+                <span><i class="bx bx-bullhorn"></i>Brand Messaging</span>
+                <span><i class="bx bx-book"></i>Content Writing</span>
+              </div>
+            </div>
+          </div>
+
+          <span class="number-page">4</span>
+
+          <!-- prev button -->
+          <!-- next button -->
+          <span class="nextprev-btn back" data-page="turn-2">
+            <i class="bx bx-chevron-left"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- page 5 & 6 -->
+      <div class="book-page page-right turn" id="turn-3">
+        <!-- page 5 (latest project) -->
+        <div class="page-front">
+          <h1 class="title">Latest Project</h1>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="website 3.png" alt="Personal Branding Website Project">
+            </div>
+
+            <div class="info-box">
+              <div class="info-title">
+                <h3>Personal Branding Website</h3>
+                <a href="#">Live Preview <i class="bx bx-link-external"></i></a>
+              </div>
+              <p>Tech Used: HTML, CSS, JavaScript, React</p>
+              <p>
+                A modern portfolio and branding site designed to showcase 
+                my services in web development, copywriting, and creativity.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href="#" class="btn">Source Code</a>
+              <a href="#" class="btn">More Projects</a>
+            </div>
+          </div>
+
+          <span class="number-page">5</span>
+
+          <!-- next button -->
+          <span class="nextprev-btn" data-page="turn-3">
+            <i class="bx bx-chevron-right"></i>
+          </span>
+        </div>
+
+        <!-- page 6 (contact me!) -->
+        <div class="page-back">
+          <h1 class="title">Contact Me!</h1>
+
+          <div class="contact-box">
+            <form action="">
+              <input type="text" class="field" placeholder="Full Name" required>
+              <input type="email" class="field" placeholder="Email Address" required>
+              <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send Message" class="btn">
+            </form>
+          </div>
+
+          <span class="number-page">6</span>
+
+          <!-- prev button -->
+          <!-- next button -->
+          <span class="nextprev-btn back" data-page="turn-3">
+            <i class="bx bx-chevron-left"></i>
+          </span>
+
+          <a href="#" class="back-profile">
+            <p>Profile</p>
+            <i class="bx bxs-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="script.js"></script>
+</body>
+</html>
