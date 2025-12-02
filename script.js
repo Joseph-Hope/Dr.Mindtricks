@@ -32,7 +32,7 @@ pageTurnBtn.forEach((el, index) => {
     el.onclick = () => {
         handlePageTurn(el, index);
     };
-    
+
     // Touch support for mobile
     el.addEventListener('touchstart', (e) => {
         e.preventDefault(); // Prevent double-firing on mobile
@@ -167,26 +167,26 @@ function handleSwipe() {
     const swipeThreshold = 50;
     const horizontalDiff = touchEndX - touchStartX;
     const verticalDiff = Math.abs(touchEndY - touchStartY);
-    
+
     // Only register horizontal swipes (ignore vertical scrolling)
     if (verticalDiff < 50) {
         // Swipe left - next page
         if (horizontalDiff < -swipeThreshold) {
             const visibleNextBtn = Array.from(pageTurnBtn).find(btn => {
                 const page = btn.closest('.page-front');
-                return page && !btn.classList.contains('back') && 
+                return page && !btn.classList.contains('back') &&
                        window.getComputedStyle(page).visibility !== 'hidden';
             });
             if (visibleNextBtn) {
                 visibleNextBtn.click();
             }
         }
-        
+
         // Swipe right - previous page
         if (horizontalDiff > swipeThreshold) {
             const visibleBackBtn = Array.from(pageTurnBtn).find(btn => {
                 const page = btn.closest('.page-back');
-                return page && btn.classList.contains('back') && 
+                return page && btn.classList.contains('back') &&
                        window.getComputedStyle(page).visibility !== 'hidden';
             });
             if (visibleBackBtn) {

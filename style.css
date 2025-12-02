@@ -18,6 +18,7 @@
     --pages-color:linear-gradient(90deg, #fff, #ddd);
     --border: 0.125rem solid #00abf0;
     --box-shadow: 0 0 0.8rem rgba(0,0,0,0.2);
+
 }
 body{
     display: flex;
@@ -67,6 +68,7 @@ body{
 .cover.cover-right{
     z-index: 100;
     transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+
 }
 .cover.cover-right.turn {
     transform: rotateY(180deg);
@@ -126,6 +128,7 @@ body{
     color: var(--main-color);
     margin: 0 .2rem;
     transition: .5s;
+
 }
 .profile-page .social-media a:hover{
     background-color: var(--main-color);
@@ -301,12 +304,14 @@ body{
     color: var(--main-color);
 }
 
+
 /* skilss box */
 .skills-box{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
+
 }
 .skills-box .skills-content{
     flex: 1 1 20rem;
@@ -332,6 +337,7 @@ body{
     border-radius: .3rem;
     font-weight: 600;
     transition: .3s ease;
+    transition: .3 ease;
 }
 .skills-content .content span:hover{
     box-shadow: var(--box-shadow);
@@ -344,6 +350,7 @@ body{
 /* portfolio */
 .portfolio-box{
     margin-top: 2rem;
+
 }
 .portfolio-box .img-box{
     display: flex;
@@ -395,6 +402,7 @@ body{
     margin: 0 1 .15rem;
 }
 
+
 /* Contact Me! */
 .contact-box{
     margin-top: 2rem;
@@ -410,6 +418,7 @@ body{
     color: var(--text-color);
     margin-bottom: 1.5rem;
 }
+
 .contact-box .field::placeholder{
     color: var(--text-color);
 }
