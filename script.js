@@ -4,7 +4,7 @@ const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
 // Function to handle page turning
 function handlePageTurn(el, index) {
     // Disable page turning on small screens (mobile layout)
-    if (window.innerWidth <= 768) {
+    if (window.matchMedia('(max-width: 768px)').matches) {
         return;
     }
 
@@ -45,8 +45,8 @@ const pages = document.querySelectorAll('.book-page.page-right');
 const contactMeBtn = document.querySelector('.btn.contact-me');
 
 function openContactPage() {
-    // On small screens, scroll to contact section instead of turning pages
-    if (window.innerWidth <= 768) {
+    // On small and medium screens, scroll to contact section instead of turning pages
+    if (window.innerWidth <= 1024) {
         window.scrollTo({
             top: document.body.scrollHeight,
             behavior: 'smooth'

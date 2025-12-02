@@ -524,8 +524,13 @@ body{
     }
 
     .book-page.page-right {
-        transform: none;
+        transform: none !important;
         transform-origin: unset;
+        transform-style: flat;
+    }
+
+    .book-page.page-right.turn {
+        transform: none !important;
     }
 
     .book-page .page-front,
@@ -533,6 +538,7 @@ body{
         position: static;
         transform: none !important;
         backface-visibility: visible;
+        transform-style: flat;
         padding: 1rem 1.2rem;
     }
 
